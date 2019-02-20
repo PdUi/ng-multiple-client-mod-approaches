@@ -1,0 +1,11 @@
+<div class="app">
+  <header>
+    <select name="client-selector" (change)="updateClient($event.target.value)">
+      <option value="client1">Client 1</option>
+      <option value="client2">Client 2</option>
+      <option value="client3">Client 3</option>
+    </select>
+  </header>
+
+  <router-outlet></router-outlet>
+</div>

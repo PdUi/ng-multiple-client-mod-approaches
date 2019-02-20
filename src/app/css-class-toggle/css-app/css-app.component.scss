@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+:host(.client1) {
+  color: green;
+}
+
+:host(.client3) {
+  color: orange;
+
+  app-square {
+    display: none;
+  }
+
+  app-triangle {
+    display: none;
+  }
+}
+
+:host(.client2) {
+  color: blue;
+
+  app-circle {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+.app {
+  border: 1px solid tomato;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
