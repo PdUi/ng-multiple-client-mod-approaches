@@ -7,11 +7,14 @@ import { ClientsService } from './clients.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedClient = 'client1';
+
   constructor(private clientsService: ClientsService) {
-    this.updateClient('client1');
+    this.updateClient(this.selectedClient);
   }
 
   updateClient(client: string) {
+    this.selectedClient = client;
     this.clientsService.selectClient(client);
   }
 }
